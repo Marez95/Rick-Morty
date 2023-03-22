@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  font-family: "Righteous", cursive;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(https://images3.alphacoders.com/812/812062.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+  margin: 50px auto;
+}
+
+.character {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  border: 10px solid green;
+  cursor: pointer;
+}
+
+.character:hover {
+  border: 10px solid red;
+}
+
+.character {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+}
+
+.character-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;
+  opacity: 0;
+  border-radius: 15px;
+}
+
+.character-info:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body#single-character {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body#single-character > div.card {
+  background-color: aquamarine;
+  padding: 25px;
+  border: 5px solid rgb(209, 103, 16);
+}
+
+body#single-character ul {
+  background-color: purple;
+  overflow-y: scroll;
+  height: 200px;
+  list-style-position: inside;
+  padding: 10px;
+}
